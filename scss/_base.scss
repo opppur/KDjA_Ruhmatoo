@@ -1,4 +1,4 @@
-// Base styles
+// Põhi (üleüldiselt kõike mõjutavad muutujad)
 * {
   margin: 0;
   padding: 0;
@@ -8,5 +8,6 @@
 body {
   font-family: $font-family;
   color: $primary-color;
+  background-color: $background-color;
   line-height: 1.6;
 }
