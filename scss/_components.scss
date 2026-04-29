@@ -5,6 +5,16 @@
   padding: 0 20px;
 }
 
+.placeholder {
+  text-align: center;
+  img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    align-items: center;
+  }
+}
+
 // Navbar
 .navbar {
   background-color: $primary-color;
