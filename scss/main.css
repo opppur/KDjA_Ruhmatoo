@@ -27,6 +27,35 @@ body {
   align-items: center;
 }
 
+.blog-panel {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1.5rem;
+  margin: 2rem 0;
+  padding: 1.5rem;
+  background-color: rgba(111, 117, 111, 0.08);
+  border-radius: 10px;
+}
+
+.blog-panel-content {
+  flex: 1 1 320px;
+}
+
+.blog-panel-image {
+  flex: 0 0 260px;
+}
+
+.blog-panel-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.button-row {
+  margin-bottom: 2rem;
+}
+
 .navbar {
   background-color: #333;
   padding: 1rem 0;
@@ -58,14 +87,41 @@ body {
 .btn {
   display: inline-block;
   padding: 0.75rem 1.5rem;
-  background-color: #6f756f;
+  background-color: #fff;
   color: #fff;
-  text-decoration: none;
   border-radius: 4px;
   transition: background-color 0.3s;
   border: none;
   cursor: pointer;
 }
 .btn:hover {
+  background-color: rgb(229.5, 229.5, 229.5);
+}
+
+.btn-primary {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  background-color: #333;
+  color: #fff;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+  border: none;
+  cursor: pointer;
+}
+.btn-primary:hover {
+  background-color: rgb(25.5, 25.5, 25.5);
+}
+
+.btn-secondary {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  background-color: #6f756f;
+  color: #fff;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+  border: none;
+  cursor: pointer;
+}
+.btn-secondary:hover {
   background-color: rgb(86.1710526316, 90.8289473684, 86.1710526316);
 }/*# sourceMappingURL=main.css.map */
