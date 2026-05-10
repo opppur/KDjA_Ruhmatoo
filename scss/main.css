@@ -164,6 +164,32 @@ img {
   background-color: rgb(61.3421052632, 64.6578947368, 61.3421052632);
 }
 
+.author-bio {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  margin: 2rem 0;
+  padding: 1.5rem;
+  background-color: rgba(111, 117, 111, 0.08);
+  border-radius: 8px;
+}
+
+.author-image {
+  flex: 0 0 120px;
+}
+
+.author-image img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.author-content {
+  flex: 1;
+}
+
 .content-wrapper {
   display: flex;
   justify-content: space-between;
@@ -186,5 +212,12 @@ img {
   .sidebar {
     flex: none;
     width: 100%;
+  }
+  .author-bio {
+    flex-direction: column;
+    text-align: center;
+  }
+  .author-image {
+    flex: none;
   }
 }/*# sourceMappingURL=main.css.map */
