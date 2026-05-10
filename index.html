@@ -8,23 +8,24 @@
   <link rel="stylesheet" href="scss/main.css">
 </head>
 <body>
-<!-- päis -->
-  <nav class="navbar">
-    <div class="container navbar-container">
-      <a href="index.html" class="navbar-pealkiri">
-        <img src="favicon.png" alt="Blogila logo" class="navbar-logo">
-        Blogila
-      </a>
-      <div class="navbar-links">
-        <a href="index.html">Avaleht</a>
-        <a href="about.html">Kontakt</a>
+  <a href="#main" class="skip-link">Skip to main content</a>
+  <header>
+    <nav class="navbar">
+      <div class="container navbar-container">
+        <div class="navbar-left">
+          <img src="blogila_logo.png" alt="Blogila logo" class="navbar-logo">
+          <a href="index.html" class="navbar-pealkiri">Blogila</a>
+        </div>
+        <div class="navbar-links">
+          <a href="index.html" aria-current="page">Avaleht</a>
+          <a href="about.html">Kontakt</a>
+        </div>
       </div>
-    </div>
-
-  </nav>
+    </nav>
+  </header>
   <div class="container">
     <div class="content-wrapper">
-      <main>
+      <main id="main">
         <h1>Tere tulemast Blogila avalehele!</h1>
         <section class="blog-panel-secondary">
           <div class="blog-panel-image">
@@ -59,12 +60,12 @@
         </section>
       </main>
       <aside class="sidebar">
-        <h1>Kuu postitus:</h1>
+        <h2>Kuu postitus:</h2>
         <h3>
           <a href="blog2.html">Loodusfotograafia ja selle eetilised kallakud.</a> 
         </h3>
         <img src="profile2.png" alt="Külgriba pilt" style="width: 100%; border-radius: 8px;">
-        <h1>Kuu blogija:</h1>
+        <h2>Kuu blogija:</h2>
         <h3>
           <a href="blog1.html">Sirle Metsa blogi</a>
         </h3>

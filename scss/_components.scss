@@ -1,4 +1,21 @@
 // komponendid ja mixinid
+
+// Skip link for accessibility
+.skip-link {
+  position: absolute;
+  top: -40px;
+  left: 6px;
+  background: #000;
+  color: #fff;
+  padding: 8px;
+  text-decoration: none;
+  z-index: 100;
+}
+
+.skip-link:focus {
+  top: 6px;
+}
+
 .container {
   max-width: 1200px;
   margin: 0 auto;
@@ -67,17 +84,20 @@
     align-items: center;
   }
   
-  .navbar-pealkiri {
-    color: #fff;
-    font-size: 1.5rem;
-    font-weight: bold;
+  .navbar-left {
     display: flex;
     align-items: center;
     gap: 0.5rem;
   }
+  
+  .navbar-pealkiri {
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
 
   .navbar-logo {
-    height: 1.5rem;
+    height: 2rem;
     width: auto;
   }
 
@@ -293,7 +313,7 @@
     display: none;
 }
 
-.rating-options label {
+.rating-options label, .rating-options legend {
     padding: 0.5rem 0.8rem;
     border: 1px solid #ccc;
     border-radius: 6px;
@@ -326,4 +346,8 @@
 
 .rating-form button:hover {
     background: #444;
+}
+
+fieldset {
+  border: 2px $primary-color solid;
 }
