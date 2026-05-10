@@ -71,6 +71,14 @@
     color: #fff;
     font-size: 1.5rem;
     font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  .navbar-logo {
+    height: 1.5rem;
+    width: auto;
   }
 
   .navbar-links {
@@ -245,5 +253,77 @@
 }
 
 .comment-form button:hover {
+    background: #444;
+}
+
+/* hinnangud */
+
+.rating {
+    margin-top: 2rem;
+}
+
+.rating h3 {
+    font-size: 1.3rem;
+    margin-bottom: 0.5rem;
+}
+
+.rating p {
+    margin-bottom: 1rem;
+    font-size: 0.9rem;
+}
+
+.rating-form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.7rem;
+}
+
+.rating-form label {
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+
+.rating-options {
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+}
+
+.rating-options input[type="radio"] {
+    display: none;
+}
+
+.rating-options label {
+    padding: 0.5rem 0.8rem;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 0.9rem;
+    background: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+.rating-options input[type="radio"]:checked + label {
+    background: #222;
+    color: #fff;
+    border-color: #222;
+}
+
+.rating-options label:hover {
+    background: #f0f0f0;
+}
+
+.rating-form button {
+    width: fit-content;
+    padding: 0.6rem 1.2rem;
+    border: none;
+    background: #222;
+    color: white;
+    border-radius: 6px;
+    font-size: 0.9rem;
+    cursor: pointer;
+}
+
+.rating-form button:hover {
     background: #444;
 }
