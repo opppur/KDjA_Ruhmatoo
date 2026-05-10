@@ -1,4 +1,21 @@
 // komponendid ja mixinid
+
+// Skip link for accessibility
+.skip-link {
+  position: absolute;
+  top: -40px;
+  left: 6px;
+  background: #000;
+  color: #fff;
+  padding: 8px;
+  text-decoration: none;
+  z-index: 100;
+}
+
+.skip-link:focus {
+  top: 6px;
+}
+
 .container {
   max-width: 1200px;
   margin: 0 auto;
@@ -67,10 +84,21 @@
     align-items: center;
   }
   
+  .navbar-left {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  
   .navbar-pealkiri {
     color: #fff;
     font-size: 1.5rem;
     font-weight: bold;
+  }
+
+  .navbar-logo {
+    height: 2rem;
+    width: auto;
   }
 
   .navbar-links {
@@ -120,6 +148,32 @@
   @include button($secondary-color);
 }
 
+// Autori tutvustus artikli all
+.author-bio {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  margin: 2rem 0;
+  padding: 1.5rem;
+  background-color: rgba($secondary-color, 0.08);
+  border-radius: 8px;
+}
+
+.author-image {
+  flex: 0 0 120px;
+}
+
+.author-image img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.author-content {
+  flex: 1;
+}
+
 // Content wrapper
 .content-wrapper {
   display: flex;
@@ -146,5 +200,154 @@
     flex: none;
     width: 100%;
   }
+  .author-bio {
+    flex-direction: column;
+    text-align: center;
+  }
+  .author-image {
+    flex: none;
+  }
 }
 
+/* kommentaarid */
+
+.comments {
+    margin-top: 3rem;
+}
+
+.comments h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.comments-box {
+    background: #f3f3f3;
+    padding: 1.5rem;
+    border-radius: 10px;
+}
+
+.comment {
+    padding-bottom: 0.8rem;
+    margin-bottom: 0.8rem;
+    border-bottom: 1px solid #d8d8d8;
+}
+
+.comment strong {
+    font-size: 0.95rem;
+}
+
+.comment p {
+    margin-top: 0.3rem;
+    font-size: 0.9rem;
+    line-height: 1.4;
+}
+
+.comment-form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.7rem;
+    margin-top: 1rem;
+}
+
+.comment-form input, .comment-form textarea {
+    padding: 0.7rem;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 0.9rem;
+}
+
+.comment-form textarea {
+    min-height: 80px;
+    resize: vertical;
+}
+
+.comment-form button {
+    width: fit-content;
+    padding: 0.6rem 1.2rem;
+    border: none;
+    background: #222;
+    color: white;
+    border-radius: 6px;
+    font-size: 0.9rem;
+    cursor: pointer;
+}
+
+.comment-form button:hover {
+    background: #444;
+}
+
+/* hinnangud */
+
+.rating {
+    margin-top: 2rem;
+}
+
+.rating h3 {
+    font-size: 1.3rem;
+    margin-bottom: 0.5rem;
+}
+
+.rating p {
+    margin-bottom: 1rem;
+    font-size: 0.9rem;
+}
+
+.rating-form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.7rem;
+}
+
+.rating-form label {
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+
+.rating-options {
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+}
+
+.rating-options input[type="radio"] {
+    display: none;
+}
+
+.rating-options label, .rating-options legend {
+    padding: 0.5rem 0.8rem;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 0.9rem;
+    background: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+.rating-options input[type="radio"]:checked + label {
+    background: #222;
+    color: #fff;
+    border-color: #222;
+}
+
+.rating-options label:hover {
+    background: #f0f0f0;
+}
+
+.rating-form button {
+    width: fit-content;
+    padding: 0.6rem 1.2rem;
+    border: none;
+    background: #222;
+    color: white;
+    border-radius: 6px;
+    font-size: 0.9rem;
+    cursor: pointer;
+}
+
+.rating-form button:hover {
+    background: #444;
+}
+
+fieldset {
+  border: 2px $primary-color solid;
+}
