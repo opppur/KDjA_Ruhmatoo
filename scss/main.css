@@ -188,3 +188,155 @@ img {
     width: 100%;
   }
 }/*# sourceMappingURL=main.css.map */
+
+.blog1-image {
+    width: 1200px;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 2rem 0;
+}
+
+.comments {
+    margin-top: 3rem;
+}
+
+.comments h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.comments-box {
+    background: #f3f3f3;
+    padding: 1.5rem;
+    border-radius: 10px;
+}
+
+.comment {
+    padding-bottom: 0.8rem;
+    margin-bottom: 0.8rem;
+    border-bottom: 1px solid #d8d8d8;
+}
+
+.comment strong {
+    font-size: 0.95rem;
+}
+
+.comment p {
+    margin-top: 0.3rem;
+    font-size: 0.9rem;
+    line-height: 1.4;
+}
+
+.comment-form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.7rem;
+    margin-top: 1rem;
+}
+
+.comment-form input,
+.comment-form textarea {
+    padding: 0.7rem;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 0.9rem;
+}
+
+.comment-form textarea {
+    min-height: 80px;
+    resize: vertical;
+}
+
+.comment-form button {
+    width: fit-content;
+    padding: 0.6rem 1.2rem;
+    border: none;
+    background: #222;
+    color: white;
+    border-radius: 6px;
+    font-size: 0.9rem;
+    cursor: pointer;
+}
+
+.comment-form button:hover {
+    background: #444;
+}
+
+.author-box {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+
+    background: #f3f3f3;
+
+    padding: 1.5rem;
+    border-radius: 10px;
+
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+.author-box img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+
+    border-radius: 8px;
+}
+
+.author-info h2 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.author-info p {
+    font-size: 0.95rem;
+    line-height: 1.5;
+    color: #333;
+}
+
+.author {
+    display: block;
+
+    font-size: 1.1rem;
+    font-weight: 600;
+
+    margin-top: 0.5rem;
+    margin-bottom: 1.5rem;
+
+    color: #444;
+}
+
+.blog-navigation {
+    display: flex;
+    justify-content: space-between;
+
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+}
+
+.btn {
+    background: #2d2d2d;
+    color: white;
+
+    padding: 0.8rem 1.4rem;
+
+    border-radius: 8px;
+
+    text-decoration: none;
+    font-weight: 600;
+
+    transition: 0.2s;
+}
+
+.btn:hover {
+    background: #444;
+}
+
+.author-box,
+.comments-box {
+    background: #f5f3f369;
+    border-radius: 12px;
+    padding: 2rem;
+}
