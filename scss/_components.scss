@@ -101,7 +101,7 @@
   cursor: pointer;
 
   &:hover {
-    background-color: darken($color, 10%);
+    background-color: darken($color, 20%);
   }
 }
 
@@ -118,5 +118,33 @@
 // Sekundaarne värv
 .btn-secondary {
   @include button($secondary-color);
+}
+
+// Content wrapper
+.content-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 2rem;
+  flex: 1;
+}
+
+// Sidebar kuu postituse ja kuu blogija jaoks
+.sidebar {
+  flex: 0 0 300px;
+  background-color: rgba($secondary-color, 0.1);
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+// Ekraanil alla 800px, muutub layout vertikaalseks
+@media (max-width: 800px) {
+  .content-wrapper {
+    flex-direction: column;
+  }
+  .sidebar {
+    flex: none;
+    width: 100%;
+  }
 }
 
